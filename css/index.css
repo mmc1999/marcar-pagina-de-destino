@@ -345,6 +345,7 @@ section {
     box-shadow: 0px 2px 2px 0px hsl(255, 0%, 75%);
     font-weight: 600;
     font-size: 11px;
+    cursor: pointer;
 }
 
 /*------------------------------- QUINTA SECCION-----------------------*/
@@ -691,6 +692,7 @@ footer {
         height: 30px;
         border: none;
         box-shadow: 0px 2px 2px 0px rgba(230, 230, 230, 0.736);
+        cursor: pointer;
     }
 
     /*----------------------TERCERA SECCION ---------------------------*/
