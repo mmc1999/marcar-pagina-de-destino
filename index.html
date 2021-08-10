@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Bookmark landing page</title>
+  <link rel="stylesheet" href="/css/index.css">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <div class="divLogo">
+      <img src="images/logo-bookmark.svg" alt="Logo de la empresa">
+    </div>
+    <nav class="nav">
+      <div class="iconoCierre">
+        <img src="images/logo-bookmark.svg" alt="logo de la empresa" class="logoHeader">
+        <img src="images/icon-close.svg" alt="icono de cierre" class="cierre">
+      </div>
+      <ul class="ul">
+        <li class="ulLi"><a href="#" class="enlaceNav">Features</a></li>
+        <li class="ulLi"><a href="#" class="enlaceNav">Pricing</a></li>
+        <li class="ulLi borde"><a href="#" class="enlaceNav">Contact</a></li>
+        <li class="ulLi liLogin"><a href="#" class="enlaceNav">Login</a></li>
+        <div class="redesHeader">
+          <a href="https://www.facebook.com/" target="_blank"><img src="images/icon-facebook.svg" alt="icono de facebook"></a>
+          <a href="https://twitter.com/" target="_blank"><img src="images/icon-twitter.svg" alt="icono de twitter"></a>
+        </div>
+      </ul>
+    </nav>
+    <div class="divBotonHamburguesa">
+      <img src="images/icon-hamburger.svg" alt="boton de hamburguesa" class="imagenHamburguesa">
+    </div>
+  </header>
+  <main>
+    <section class="primeraSection">
+      <div class="divFoto">
+        <img src="images/illustration-hero.svg" alt="Imagen de una tablet con datos" class="primerFoto">
+        <div class="fondo"></div>
+      </div>
+      <div class="divPrimeraSectionTextoBotones">
+        <h2>A Simple Bookmark Manager</h2>
+        <p class="parrafo"> A clean and simple interface to organize your favourite websites. Open a new
+          browser tab and see your sites load instantly. Try it for free.</p>
+        <div class="divBotones">
+          <button class="descargarBoton desgargarGoogle">Get it on Chrome</button>
+          <button class="descargarBoton">Get it on Firefox</button>
+        </div>
+      </div>
+    </section>
+    <section class="segundaSection">
+      <div class="divTituloParrafo">
+        <h3>Features</h3>
+        <p class="parrafo"> Our aim is to make it quick and easy for you to access your favourite websites.
+          Your bookmarks sync between your devices so you can access them on the go.
+        </p>
+      </div>
+      <div class="divSeleccionarOpcion">
+        <p class="seleccionOpcion seleccionOpcion1">Simple Bookmarking</p>
+        <p class="seleccionOpcion seleccionOpcion2">Speedy Searching</p>
+        <p class="seleccionOpcion seleccionOpcion3">Easy Sharing</p>
+      </div>
+      <div class="opcionSeleccionada">
+        <div class="divOpcionseleccionada">
+          <div class="opcion active">
+            <div class="primerDiv">
+              <img src="images/illustration-features-tab-1.svg" alt="Foto orientativa al tema seleccionado"
+                class="imagenSeleccionada">
+            </div>
+            <div class="divAbajoFoto">
+              <h3>Bookmark in one click</h3>
+              <p class="parrafo">Organize your bookmarks however you like. Our simple drag-and-drop interface
+                gives you complete control over how you manage your favourite sites.</p>
+              <button class="botonMasInfo">More Info</button>
+            </div>
+          </div>
+          <div class="opcion">
+            <div class="primerDiv">
+              <img src="images/illustration-features-tab-2.svg" alt="Foto orientativa al tema seleccionado"
+                class="imagenSeleccionada">
+            </div>
+            <div class="divAbajoFoto">
+              <h3>Share your bookmarks</h3>
+              <p class="parrafo">Easily share your bookmarks and collections with others. Create a shareable
+                link that you can send at the click of a button.</p>
+              <button class="botonMasInfo">More Info</button>
+            </div>
+          </div>
+          <div class="opcion">
+            <div class="primerDiv">
+              <img src="images/illustration-features-tab-3.svg" alt="Foto orientativa al tema seleccionado"
+                class="imagenSeleccionada">
+            </div>
+            <div class="divAbajoFoto">
+              <h3>Intelligent search</h3>
+              <p class="parrafo">Our powerful search feature will help you find saved sites in no time at all.
+                No need to trawl through all of your bookmarks.</p>
+              <button class="botonMasInfo">More Info</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="terceraSection">
+      <div>
+        <h2>Download the extension</h2>
+        <p class="parrafo">We’ve got more browsers in the pipeline. Please do let us know if you’ve
+          got a favourite you’d like us to prioritize.</p>
+      </div>
+      <article class="elegirNavegadorDescargas">
+        <div>
+          <img src="images/logo-chrome.svg" alt="logo de google" class="logoNavegador">
+          <h4>Add to Chrome</h4>
+          <p class="parrafo">Minimum version 62</p>
+          <img src="images/bg-dots.svg" alt="">
+          <button class="botonInstalar">Add & Install Extension</button>
+        </div>
+        <div>
+          <img src="images/logo-firefox.svg" alt="logo de firefox" class="logoNavegador">
+          <h4>Add to Firefox</h4>
+          <p class="parrafo">Minimum version 62</p>
+          <img src="images/bg-dots.svg" alt="">
+          <button class="botonInstalar">Add & Install Extension</button>
+        </div>
+        <div>
+          <img src="images/logo-opera.svg" alt="logo de opera" class="logoNavegador">
+          <h4>Add to Opera</h4>
+          <p class="parrafo">Minimum version 46</p>
+          <img src="images/bg-dots.svg" alt="">
+          <button class="botonInstalar">Add & Install Extension</button>
+        </div>
+      </article>
+
+    </section>
+    <section class="cuartaSection">
+      <div class="divTituloPreguntas">
+        <h2>Frequently Asked Questions</h2>
+        <p class="parrafo">Here are some of our FAQs. If you have any other questions you’d like
+          answered please feel free to email us.</p>
+      </div>
+      <article class="faq">
+        <div class="preguntaRta">
+          <div class="pregunta pregunta1">
+            <p class="pregunta1">What is Bookmark?</p>
+            <img src="images/icon-arrow.svg" alt="icono de flecha" class="iconoFlecha">
+          </div>
+          <div class="respuesta respuesta1">
+            <p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
+              justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+          </div>
+        </div>
+        <div class="preguntaRta">
+          <div class="pregunta pregunta2">
+            <p class="pregunta2">How can I request a new browser?</p>
+            <img src="images/icon-arrow.svg" alt="icono de flecha" class="iconoFlecha">
+          </div>
+          <div class="respuesta respuesta2">
+            <p class="parrafo">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non
+              ligula.
+              Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+              ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
+              Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+          </div>
+        </div>
+        <div class="preguntaRta">
+          <div class="pregunta pregunta3">
+            <p class="pregunta3">Is there a mobile app?</p>
+            <img src="images/icon-arrow.svg" alt="icono de flecha" class="iconoFlecha">
+          </div>
+          <div class="respuesta respuesta3">
+            <p class="parrafo">Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut
+              condimentum
+              urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed
+              sollicitudin ex et ultricies bibendum.</p>
+          </div>
+        </div>
+        <div class="preguntaRta">
+          <div class="pregunta pregunta4">
+            <p class="pregunta4">What about other Chromium browsers?</p>
+            <img src="images/icon-arrow.svg" alt="icono de flecha" class="iconoFlecha">
+          </div>
+          <div class="respuesta respuesta4">
+            <p class="parrafo">Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui.
+              Aliquam
+              vitae neque eget nisl gravida pellentesque non ut velit.</p>
+          </div>
+        </div>
+        <button>More Info</button>
+      </article>
+
+    </section>
+    <section class="quintaSection">
+      <h6>35,000+ already joined</h6>
+      <h4>Stay up-to-date with what we’re doing</h4>
+      <form class="formulario">
+        <input type="email" name="mail" class="inputMail"><br>
+        <p class="errorParrafo">Whoops, make sure it's an email</p>
+        <p class="mailEnviado">El mail ha sido enviado</p>
+        <button class="botonForm" type="submit">Contact Us</button>
+      </form>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="divDelFooter">
+      <img src="images/logo-bookmark.svg" alt="logo de la marca" class="logoFooter">
+      <a href="#" class="enlaceFooter">features</a>
+      <a href="#" class="enlaceFooter">Pricing</a>
+      <a href="#" class="enlaceFooter">Contact</a>
+      <div class="divIconos">
+        <a href="https://www.facebook.com" target="_blank"><img src="images/icon-facebook.svg" alt="icono de facebook" class="iconosFooter"></a>
+        <a href="https://twitter.com/" target="_blank"><img src="images/icon-twitter.svg" alt="icono de twitter" class="iconosFooter"></a>
+      </div>
+    </div>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#" target="_blank">Centorbi Matias</a>.
+    </p>
+  </footer>
+  <script src="/js/index.js"></script>
+  <script src="/js/formulario.js"></script>
+</body>
+
+</html>
