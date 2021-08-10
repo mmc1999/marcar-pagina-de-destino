@@ -1,0 +1,846 @@
+html {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    /*scroll-behavior: smooth;*/
+}
+
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow-x: hidden;
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*------------------------HEADER ---------------------------------*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+.nav {
+    padding: 20px 40px;
+    position: fixed;
+    bottom: 100%;
+    top: 10;
+    right: 0;
+    left: 0;
+    z-index: 998;
+    background-color: rgba(46,52,78,0.9);
+    
+}
+    /*ESTA CLASE ES PARA JUGAR CON EL TOGGLE EN JS Y SACAR Y PONER EL MENU*/
+.nav.is-active {
+    display: flex;
+    flex-direction: column;
+    transition: transform 1s ease-in-out;
+    height: 100%;
+    transform: translate(0, 100%);
+    -webkit-transform: translate(0, 100%);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+}
+.logoHeader {
+    filter:  grayscale(100%) invert(1);
+}
+
+.iconoCierre {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.ul {
+
+    margin-top: 6px;
+    padding-left: 0%;
+}
+.ulLi {
+    list-style: none;
+    border-top: 0.5px solid gray;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.borde {
+    border-bottom: 0.5px solid gray;
+}
+.liLogin {
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
+    max-width: 100%;
+}
+.liLogin .enlaceNav {
+    color: white;
+}
+.enlaceNav {
+    text-decoration: none;
+    color:rgba(255, 255, 255, 0.736);
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.redesHeader {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+.redesHeader img{
+    margin: 0px 20px;
+}
+/* ------------------------------- MAIN ------------------------- */
+main {
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+}
+
+/*-------------------------------PRIMERA SECCION-----------------------*/
+.divFoto {
+    position: relative;
+}
+
+.divFoto::before {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    left: 20%;
+    top: 10%;
+    width: 100%;
+    height: 90%;
+    background-color: hsl(231, 69%, 60%);
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px;
+    margin: 0%;
+    padding: 0%;
+}
+
+.primerFoto {
+    position: relative;
+    z-index: 2;
+}
+
+.parrafo {
+    font-size: 12px;
+    opacity: 0.6;
+    line-height: 25px;
+    padding: 0px 5px;
+}
+
+.divBotones {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.descargarBoton {
+    margin: 0px 10px;
+    width: 100px;
+    font-size: 10px;
+    height: 30px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: hsl(229, 31%, 21%);
+    opacity: 0.9;
+    box-shadow: 0px 2px 2px 0px hsl(220, 7%, 92%);
+}
+
+.desgargarGoogle {
+    background-color: hsl(231, 69%, 60%);
+    color: white;
+    opacity: 1;
+}
+
+/*------------------------------- SEGUNDA SECCION-----------------------*/
+.segundaSection {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.divSeleccionarOpcion {
+    margin: 40px 0px;
+}
+
+.seleccionOpcion {
+    margin: 0px 0px;
+    padding: 20px 0px;
+    border-top: 0.5px solid rgb(206, 206, 206);
+    cursor: pointer;
+}
+
+.divSeleccionarOpcion p:nth-child(3) {
+    border-bottom: 0.5px solid rgb(206, 206, 206);
+}
+
+.seleccionOpcion:hover {
+    text-decoration: underline solid hsl(0, 94%, 66%);
+    text-underline-position: under;
+}
+
+.opcion {
+    display: none;
+    padding: 20px;
+}
+
+.active {
+    display: block;
+
+}
+
+.primerDiv {
+    position: relative;
+}
+
+.primerDiv::before {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    right: 20%;
+    top: 10%;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(231, 69%, 60%);
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 200px;
+    margin: 0%;
+    padding: 0%;
+}
+
+.imagenSeleccionada {
+    position: relative;
+    z-index: 2;
+}
+
+.divAbajoFoto {
+    margin-top: 50px;
+}
+
+.botonMasInfo {
+    display: none;
+}
+
+/*------------------------------- TERCERA SECCION-----------------------*/
+.terceraSection {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.elegirNavegadorDescargas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.elegirNavegadorDescargas div {
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px 0px rgb(218, 218, 218);
+    width: 80%;
+    margin: 20px 0px;
+}
+
+.logoNavegador {
+    margin-top: 40px;
+}
+
+.elegirNavegadorDescargas div button {
+    width: 90%;
+    background-color: hsl(231, 69%, 60%);
+    height: 35px;
+    border: none;
+    color: rgba(255, 255, 255, 0.836);
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 2px 0px hsl(255, 0%, 75%);
+    font-weight: 600;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.elegirNavegadorDescargas div h4 {
+    margin-bottom: 5px;
+}
+
+.elegirNavegadorDescargas div .parrafo {
+    margin: 0%;
+}
+
+/*------------------------------- CUARTA SECCION-----------------------*/
+.faq {
+    margin-top: 20px;
+}
+
+.preguntaRta {
+    border-bottom: 0.5px solid rgb(206, 206, 206);
+}
+
+.pregunta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    cursor: pointer;
+}
+
+.pregunta p {
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.preguntaRta .respuesta p {
+    text-align: left;
+    padding: 0%;
+}
+
+.iconoFlecha {
+    width: 15px;
+}
+
+.respuesta {
+    display: none;
+}
+.activarRespuesta {
+    display: block;
+}
+.rotarImagen {
+    transform: rotate(0.5turn);
+    filter: hue-rotate(130deg);
+}
+.faq button {
+    width: 100px;
+    background-color: hsl(231, 69%, 60%);
+    height: 35px;
+    border: none;
+    color: rgba(255, 255, 255, 0.836);
+    border-radius: 5px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 2px 0px hsl(255, 0%, 75%);
+    font-weight: 600;
+    font-size: 11px;
+}
+
+/*------------------------------- QUINTA SECCION-----------------------*/
+.quintaSection {
+    background-color: hsl(231, 69%, 60%);
+    margin: 0%;
+    padding: 20px;
+    color: rgb(247, 247, 247);
+}
+
+.quintaSection h6 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.quintaSection h4 {
+    font-weight: 500;
+}
+
+form {
+    position: relative;
+}
+
+/* INSERTAR ICONO DE ERROR NO SE POR QUE NO PUEDO*/
+.inputMail {
+    width: 98%;
+    height: 25px;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+
+.inputMail:invalid {
+    border: 2px solid red;
+    border-radius: 5px;
+}
+.inputMailValido {
+    border: 2px solid green;
+    border-radius: 5px;
+}
+
+.errorParrafo {
+    display: none;
+    margin: 0%;
+    padding: 5px;
+    font-size: 10px;
+    background-color: red;
+    text-align: left;
+    padding-left: 10px;
+    border-radius: 5px;
+    color: white;
+    position: absolute;
+    width: 98%;
+}
+.errorParrafo.active {
+    display: block;
+}
+.mailEnviado {
+    display: none;
+    margin: 0%;
+    padding: 5px;
+    font-size: 10px;
+    background-color: green;
+    text-align: left;
+    padding-left: 10px;
+    border-radius: 5px;
+    color: white;
+    position: absolute;
+    width: 98%;
+}
+.mailEnviado.active {
+    display: block;
+}
+.botonForm {
+    width: 100%;
+    height: 30px;
+    font-size: 11px;
+    font-weight: 600;
+    background-color: hsl(0, 94%, 66%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+/*------------------------------FOOTER-----------------------------------*/
+footer {
+    background-color: hsl(229, 31%, 21%);
+}
+
+.divDelFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.logoFooter {
+    filter: invert(0.2);
+}
+
+.divDelFooter a:nth-child(n) {
+    margin: 15px 0px;
+    color: rgba(255, 255, 255, 0.736);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+.divIconos img:nth-child(n) {
+    margin: 20px;
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/*-------------------------------------- ESCRITORIO ---------------------------*/
+@media screen and (min-width:1000px) {
+
+    /*----------------------------------HEADER----------------------*/
+    .header {
+        padding: 30px 60px;
+    }
+
+    .divBotonHamburguesa, .imagenHamburguesa {
+        display: none;
+    }
+
+    .nav {
+        display: block; 
+        position: static; 
+        background-color: transparent; 
+        width: 500px;  
+        transform: translate(0, 0); 
+        transition: transform .3s ease;
+        -webkit-transition: transform .3s ease; 
+        -moz-transition: transform .3s ease;
+        -ms-transition: transform .3s ease;
+        -o-transition: transform .3s ease;
+        -webkit-transform: t;
+        -moz-transform: t;
+        -ms-transform: t;
+        -o-transform: t;
+    }
+    .iconoCierre {
+        display: none;
+    }
+    .redesHeader {
+        display: none;
+    }
+    .ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 6px;
+    }
+
+    .ulLi {
+        list-style: none;
+        margin: 0px 2px;
+        border: none;
+    }
+
+    .enlaceNav {
+        text-decoration: none;
+        color: black;
+        text-transform: uppercase;
+        font-size: 11px;
+    }
+
+    .liLogin {
+        background-color: hsl(0, 94%, 66%);
+        text-align: center;
+        width: 80px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        box-shadow: 0px 2px 2px 0px rgba(230, 230, 230, 0.736);
+        margin: 0%;
+    }
+
+    .liLogin .enlaceNav {
+        color: white;
+    }
+
+    .liLogin:active {
+        border: 2px solid hsl(0, 94%, 66%);
+        background-color: white;
+        color: hsl(0, 94%, 66%);
+    }
+
+    .liLogin .enlaceNav:active {
+        color: hsl(0, 94%, 66%);
+    }
+
+    .enlaceNav:active {
+        color: hsl(0, 94%, 66%);
+    }
+
+    /*----------------------PRIMERA SECCION ---------------------------*/
+    .primeraSection {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding-right: 10px;
+        padding-left: 60px;
+    }
+
+    .divPrimeraSectionTextoBotones {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+        width: 350px;
+    }
+
+    .divPrimeraSectionTextoBotones h2 {
+        font-size: 30px;
+    }
+
+    .divPrimeraSectionTextoBotones p {
+        padding: 0;
+        font-size: 13px;
+    }
+
+    .descargarBoton {
+        margin: 0%;
+        width: 130px;
+        height: 40px;
+        margin-top: 30px;
+    }
+
+    .descargarBoton:active {
+        background-color: white;
+        color: black;
+        border: 2px solid black;
+    }
+
+    .desgargarGoogle {
+        margin-right: 20px;
+    }
+
+    .desgargarGoogle:active {
+        background-color: white;
+        color: hsl(231, 69%, 60%);
+        border: 2px solid hsl(231, 69%, 60%);
+    }
+
+    .primerFoto {
+        margin-right: -60px;
+        align-self: flex-end;
+    }
+
+    /*----------------------SEGUNDA SECCION ---------------------------*/
+    .segundaSection {
+        margin-top: 60px;
+        margin-bottom: 80px;
+    }
+
+    .divTituloParrafo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .divTituloParrafo p {
+        width: 350px;
+    }
+
+    .divSeleccionarOpcion {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+        border-bottom: 0.5px solid rgb(206, 206, 206);
+        width: 550px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .divSeleccionarOpcion p:nth-child(3) {
+        border-bottom: none;
+    }
+
+    .seleccionOpcion:active {
+        text-decoration: underline solid hsl(0, 94%, 66%);
+        text-underline-position: under;
+    }
+
+    .seleccionOpcion {
+        border: none;
+    }
+
+    .opcion {
+        display: none;
+
+    }
+
+    .active {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .primerDiv::before {
+        width: 124%;
+        top: 15%;
+    }
+
+    .imagenSeleccionada {
+        width: 90%;
+    }
+
+    .divAbajoFoto {
+        margin-left: 20px;
+        margin-top: 10px;
+        text-align: left;
+    }
+
+    .divAbajoFoto p {
+        padding-left: 0%;
+        width: 400px;
+    }
+
+    .botonMasInfo {
+        display: block;
+        width: 100px;
+        border-radius: 5px;
+        color: white;
+        background-color: hsl(231, 69%, 60%);
+        font-size: 11px;
+        height: 30px;
+        border: none;
+        box-shadow: 0px 2px 2px 0px rgba(230, 230, 230, 0.736);
+    }
+
+    /*----------------------TERCERA SECCION ---------------------------*/
+    .terceraSection div p {
+        font-size: 15px;
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .elegirNavegadorDescargas {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-rows: 70px 140px 210px;
+        grid-template-areas:
+            "izquierda .      ."
+            "izquierda centro ."
+            "izquierda centro derecha";
+    }
+
+    .elegirNavegadorDescargas div:nth-child(1) {
+        grid-area: izquierda;
+    }
+
+    .elegirNavegadorDescargas div:nth-child(2) {
+        grid-area: centro;
+    }
+
+    .elegirNavegadorDescargas div:nth-child(3) {
+        grid-area: derecha;
+    }
+
+    .elegirNavegadorDescargas div {
+        align-content: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0%;
+    }
+
+    .elegirNavegadorDescargas div .parrafo {
+        width: 200px;
+        margin-bottom: 15px;
+    }
+
+    .botonInstalar:active {
+        background-color: white;
+        color: hsl(231, 69%, 60%);
+        border: 2px solid hsl(231, 69%, 60%);
+    }
+
+    /*----------------------CUARTA SECCION ---------------------------*/
+    .cuartaSection {
+        margin-left: auto;
+        margin-right: auto;
+        width: 400px;
+    }
+
+    .divTituloPreguntas p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .pregunta {
+        height: 50px;
+    }
+
+    .pregunta p {
+        font-size: 13px;
+    }
+
+    .pregunta p:hover {
+        transition: color 350ms ease-out;
+        color: hsl(0, 94%, 66%);
+    }
+
+    /*---------------------- QUINTA SECCION ---------------------------*/
+    .formulario {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        position: relative;
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .inputMail {
+        width: 250px;
+    }
+    .errorParrafo {
+        display: none;
+        position: absolute;
+        top: 99%;
+        left: 9%;
+        width: 250px;
+    }
+    .mailEnviado {
+        display: none;
+        position: absolute;
+        top: 99%;
+        left: 9%;
+        width: 250px;
+    }
+    .botonForm {
+        width: 100px;
+        margin: 0%;
+    }
+
+    .botonForm:active {
+        border: 2px solid hsl(0, 94%, 66%);
+        color: hsl(0, 94%, 66%);
+        background-color: white;
+    }
+
+    /*---------------------------FOOTER---------------------------------*/
+    .divDelFooter {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .divDelFooter a:nth-child(n):hover {
+        transition: color 1s ease-out;
+        color: hsl(0, 94%, 66%);
+    }
+
+    /* cambiarle el color a la imagen cuando me posiciono arriba es svg y no me sale
+    .divDelFooter a:nth-child(n):hover {
+        fill: hsl(0, 94%, 66%);
+    }*/
+}
+
+@media screen and (min-width:1300px) {
+    .header {
+        padding: 40px 100px;
+    }
+
+    .enlaceNav {
+        font-size: 13px;
+    }
+
+    .primeraSection {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding-right: 30px;
+        padding-left: 100px;
+    }
+}
