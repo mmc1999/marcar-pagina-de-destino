@@ -12,10 +12,6 @@ This is a solution to the [Bookmark landing page challenge on Frontend Mentor](h
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -82,24 +78,7 @@ const validarForm = (e) => {
     }
 }
 ```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-
-
 ### Continued development
 
 Mi idea para los siguientes proyectos es enfocarme mas en la validacion y diseño de formularios, y hacer poryectos mas interactivos.
-
-
-## Author
-
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/challenges/easybank-landing-page-WaUhkoDN)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-
-## Acknowledgments
-
-Para este proyecto me base en la idea de frontend mentor por eso quiero agradecer a la pagina y al autor que la creo.
 
