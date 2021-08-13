@@ -6,6 +6,7 @@ This is a solution to the [Bookmark landing page challenge on Frontend Mentor](h
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -27,6 +28,11 @@ Users should be able to:
 - Receive an error message when the newsletter form is submitted if:
   - The input field is empty
   - The email address is not formatted correctly
+
+### Screenshot
+
+![imagen de la pagina web terminada](/captura.png)
+
 
 ### Links
 
